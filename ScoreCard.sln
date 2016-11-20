@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{35CB2CEC-8F39-449B-8FC0-6F42416EA3B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FA2A41E8-71BF-40B5-9832-710AA16A1ADC}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ScoreCard", "src\ScoreCard\ScoreCard.xproj", "{CEFB1121-5B10-4F81-999C-B505AFC26984}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEFB1121-5B10-4F81-999C-B505AFC26984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEFB1121-5B10-4F81-999C-B505AFC26984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEFB1121-5B10-4F81-999C-B505AFC26984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEFB1121-5B10-4F81-999C-B505AFC26984}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CEFB1121-5B10-4F81-999C-B505AFC26984} = {35CB2CEC-8F39-449B-8FC0-6F42416EA3B4}
+	EndGlobalSection
+EndGlobal

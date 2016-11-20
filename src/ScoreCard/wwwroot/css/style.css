@@ -1,0 +1,58 @@
+﻿/*.playerList div:nth-child(2n+2) {
+    background-color:lightgray;
+}*/
+body {
+    font-family:Arial;
+}
+.playerBox {
+    
+}
+.playerBox-playerInfo {
+    background-color: #69859D;
+    width: 20%;
+    display: inline-block;
+}
+.playerBox-playData{
+    background-color: #CBD9E4;
+    width: 80%;
+    display: inline-block;
+    vertical-align:top;
+}
+.teamHoleResultContainer, .teamHoleNumber, .hole-name, .playerBox-playerInfo .header, .playData-header, .courseInfo-container{
+    display: inline-block;
+}
+.playData-header {
+    background-color:#69859D;
+}
+.teamHoleResultContainer, .hole-name {
+    width:20px;
+    padding-left: 5px;
+    margin-right:5px;
+    border-left: solid 1px white;
+    text-align: right;
+}
+.playerBox-playerInfo {
+    border-bottom: solid 1px white;
+}
+.courseInfo-container {
+    margin-bottom:25px;
+}
+.courseInfo-table td {
+    width:20px;
+}
+.courseInfo-table td, .courseInfo-table tr, .courseInfo-table tbody, .courseInfo-container {
+    background-color: #CBD9E4;
+}
+.courseInfo-container {
+    border: solid 1px black;
+}
+.scoreCardBox {
+    margin-left:5px;
+    margin-top:5px;
+}
+.courseInfo-container {
+    padding: 5px 5px 5px 5px;
+}
+.playerListHeader {
+
+}
