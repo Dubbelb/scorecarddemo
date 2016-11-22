@@ -25,8 +25,18 @@
     }
 });
 var RoundBox = React.createClass({
+    _renderTees: function () {
+        if (this.props.rounds) {
+            // this should loop all tee's and then add all holeTees onto this... but it doesnt right now
+            var rounds = this.props.rounds[0];
+            debugger
+            return (
+                <TeeRow name={rounds.Course.Tees[0].TeeName} holes={rounds.Course.Holes}/>
+                );
+
+        }
+    },
     render: function () {
-        debugger
         if (this.props.rounds) {
             var courseData = this.props.rounds[0].Course;
 
@@ -55,9 +65,7 @@ var RoundBox = React.createClass({
                                 <tr>
                                     <td>Index</td>
                                 </tr>
-                                <tr>
-                                    <td>Tee</td>
-                                </tr>
+                                {this._renderTees()}
                             </tbody>
                         </table>
                     </div>
@@ -67,6 +75,17 @@ var RoundBox = React.createClass({
         else {
             return null;
         }
+    }
+});
+var TeeRow = React.createClass({
+    render: function () {
+        debugger
+        return (
+            <tr>
+                <TdNode value={this.props.name} />
+                {this._renderTee}
+            </tr>
+            );
     }
 });
 var TdNode = React.createClass({
@@ -150,7 +169,7 @@ var PlayerBox = React.createClass({
                         </span>
                         &nbsp;
                         <strong>
-                            HCP: {data.PlayingHCP}
+                            Playing HCP: {data.PlayingHCP}
                         </strong>
                     </div>
                 </div>
